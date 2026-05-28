@@ -143,25 +143,21 @@ Fluxo da simulação:
 
 Porque os pacotes precisam ser enviados na mesma ordem em que chegam à rede, garantindo organização e justiça no processamento.
 
----
 
 ## 2. Por que a pilha pode representar retransmissão?
 
 Porque normalmente o pacote mais recente com erro é tratado primeiro, tornando a pilha adequada para retransmissões rápidas.
 
----
 
 ## 3. Por que a lista encadeada ajuda no controle de pacotes ativos?
 
 Porque permite inserções e remoções dinâmicas de pacotes sem necessidade de reorganizar toda a estrutura.
 
----
 
 ## 4. Qual estrutura melhor representa atraso de fila?
 
 A fila, pois os pacotes aguardam atendimento conforme a ordem de chegada, podendo gerar tempo de espera.
 
----
 
 # Tecnologias Utilizadas
 
