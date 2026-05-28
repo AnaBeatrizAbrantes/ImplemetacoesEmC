@@ -5,16 +5,16 @@ typedef struct {
     int numero;
     int tamanhoKB;
     int tempoEstimado;
-} Pacote;
+} Pacote; // struct pacote
 
 
 typedef struct NoFila {
     Pacote dado;
     struct NoFila *prox;
-} NoFila;
+} NoFila; // NóFila
 
 typedef struct {
-    NoFila *inicio;
+    NoFila *inicio; // puxa a struct noFila para inicio e fim
     NoFila *fim;
 } Fila;
 
@@ -30,7 +30,7 @@ int filaVazia(Fila *f) {
 void enfileirar(Fila *f, Pacote p) {
     NoFila *novo = (NoFila *)malloc(sizeof(NoFila));
     if (novo == NULL) {
-        printf("Erro: sem memoria.\n");
+        printf("Erro memoria vazia.\n");
         return;
     }
 
@@ -226,7 +226,7 @@ int main() {
     inicializarPilha(&pilha);
     inicializarLista(&lista);
 
-    /* Pacotes do enunciado */
+    /* Pacotes do enunciado */ // pacotes da simulaçao práticas
     enfileirar(&fila, criarPacote(1, 500, 50));
     enfileirar(&fila, criarPacote(2, 300, 30));
     enfileirar(&fila, criarPacote(3, 700, 70));
