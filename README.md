@@ -141,7 +141,7 @@ Fluxo da simulação:
 
 ## 1. Por que a fila representa bem a transmissão de pacotes?
 
-Porque os pacotes precisam ser enviados na mesma ordem em que chegam à rede, garantindo organização e justiça no processamento.
+Porque os pacotes precisam ser enviados na mesma ordem em que chegam à rede, garantindo organização no processamento.
 
 
 ## 2. Por que a pilha pode representar retransmissão?
@@ -161,9 +161,12 @@ A fila, pois os pacotes aguardam atendimento conforme a ordem de chegada, podend
 
 # Tecnologias Utilizadas
 
-* Linguagem: (adicione aqui sua linguagem)
+* Linguagem C
 * Estruturas de Dados
-* Programação Orientada a Objetos (opcional)
+* VsCode
+* GBD Online
+* GitHub
+* Google/Youtube e outras ferramentas de pesquisa
 
 ---
 
