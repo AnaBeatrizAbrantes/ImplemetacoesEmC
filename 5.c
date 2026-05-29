@@ -226,7 +226,7 @@ int main() {
     inicializarPilha(&pilha);
     inicializarLista(&lista);
 
-    /* Pacotes do enunciado */ // pacotes da simulaçao práticas
+    
     enfileirar(&fila, criarPacote(1, 500, 50));
     enfileirar(&fila, criarPacote(2, 300, 30));
     enfileirar(&fila, criarPacote(3, 700, 70));
@@ -237,6 +237,11 @@ int main() {
 
     do {
         printf("\nREDE SIMULADO \n");
+        
+        if (!pilhaVazia(&pilha)) {
+            printf("[ALERTA]: Existem pacotes com erro aguardando retransmissao!\n");
+        }
+        
         printf("1 > Mostrar fila de espera\n");
         printf("2 > Transmitir proximo pacote da fila\n");
         printf("3 > Registrar pacote com erro\n");
@@ -275,9 +280,14 @@ int main() {
                 break;
 
             case 4:
+                // Implementação da retransmissão com aviso de remoção da estrutura de erros
                 if (desempilhar(&pilha, &p)) {
-                    printf("Pacote retransmitido: ");
+                    printf("\n==============================================\n");
+                    printf("AVISO: O pacote %d foi removido da pilha de erros.\n", p.numero);
+                    printf("Transmitindo pacote retirado da pilha: ");
                     imprimirPacote(p);
+                    printf("==============================================\n");
+                    
                     inserirFimLista(&lista, p);
                 } else {
                     printf("Nao existe pacotes com erro.\n");
