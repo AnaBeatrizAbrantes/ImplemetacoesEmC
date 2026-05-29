@@ -51,10 +51,15 @@ Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. C
 
 ## Respostas às Perguntas Teóricas
 
-1. **Ordem de Processamento:** Os pacotes precisam ser enviados na mesma ordem em que chegam à rede para garantir a organização sequencial e cronológica no processamento de dados.
-2. **Tratamento de Erros:** O pacote mais recente com erro normalmente é tratado primeiro, o que torna a estrutura de pilha ideal para cenários de retransmissões rápidas.
-3. **Vantagem da Lista Encadeada:** Esta estrutura permite inserções e remoções dinâmicas de pacotes a qualquer momento, sem a necessidade de reorganizar ou deslocar os demais elementos na memória.
-4. **Análise de Gargalo (Fila):** A fila é a estrutura associada ao gargalo, pois os pacotes aguardam atendimento estritamente conforme a ordem de chegada, o que pode gerar tempo de espera e latência adaptativa.
+**1.	 Porque os pacotes precisam ser enviados na mesma ordem em que chegam à rede, garantindo organização no processamento.**
+
+**2.	Porque normalmente o pacote mais recente com erro é tratado primeiro, tornando a pilha adequada para retransmissões rápidas.**
+
+**3.	Porque permite inserções e remoções dinâmicas de pacotes sem necessidade de reorganizar toda a estrutura.**
+
+**4.	A fila, pois os pacotes aguardam atendimento conforme a ordem de chegada, podendo gerar tempo de espera.**
+
+
 
 ---
 
