@@ -59,10 +59,13 @@ Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. C
 
 **4.	A fila, pois os pacotes aguardam atendimento conforme a ordem de chegada, podendo gerar tempo de espera.**
 
+---
+## RESULTADO TERMINAL
+<img width="427" height="167" alt="image" src="https://github.com/user-attachments/assets/61751d25-be61-4d4e-b2a3-00722e2541b6" />
+
 
 
 ---
-
 ## Tecnologias Utilizadas
 
 * Linguagem C
