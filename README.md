@@ -33,13 +33,13 @@ Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. C
 
 <img width="639" height="539" alt="Simulação Fila" src="https://github.com/user-attachments/assets/e8646a9b-8d14-4344-9a21-1c81474f43ce" />
 
-* **Resposta:** Pacote 1. Em uma estrutura de fila, o primeiro elemento inserido é o primeiro a ser atendido (princípio First In, First Out).
+## Resposta: Pacote 1. Em uma estrutura de fila, o primeiro elemento inserido é o primeiro a ser atendido (princípio First In, First Out).
 
 ### Parte 2 — Pilha
 
 <img width="775" height="648" alt="Simulação Pilha" src="https://github.com/user-attachments/assets/ef34e86d-e1b6-4605-9f2f-baf06ff4874e" />
 
-* **Resposta:** Pacote 4. O Pacote 4 ocupa o topo da estrutura. A pilha remove sempre o último elemento inserido (princípio Last In, First Out).
+## Resposta: Pacote 4. O Pacote 4 ocupa o topo da estrutura. A pilha remove sempre o último elemento inserido (princípio Last In, First Out).
 
 ### Parte 3 — Lista Encadeada
 
