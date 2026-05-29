@@ -81,6 +81,6 @@ Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. C
 git clone [https://github.com/AnaBeatrizAbrantes/ImplemetacoesEmC.git](https://github.com/AnaBeatrizAbrantes/ImplemetacoesEmC.git)
 
 # Acesse a pasta do projeto
-cd seu-repositorio
+cd ImplemetacoesEmC
 
 # Execute o programa
