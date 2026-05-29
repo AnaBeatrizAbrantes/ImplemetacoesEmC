@@ -45,8 +45,6 @@ Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. C
 
 <img width="886" height="797" alt="Simulação Lista Encadeada" src="https://github.com/user-attachments/assets/151a26ad-2f37-4a37-b405-96bf30377241" />
 
-* Gerenciamento e fluxo dinâmico dos pacotes ativos conforme as regras de inserção e remoção.
-
 ---
 
 ## Respostas às Perguntas Teóricas
