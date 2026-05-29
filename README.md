@@ -1,140 +1,94 @@
 # Simulação de Redes de Computadores
 
-Projeto desenvolvido para simular uma rede simples de computadores utilizando estruturas de dados clássicas:
+Projeto desenvolvido para simular uma rede simples de computadores utilizando estruturas de dados clássicas. O objetivo é representar o funcionamento básico de transmissão de pacotes em redes de computadores por meio de conceitos fundamentais de estruturas de dados.
 
-* Fila (Queue)
-* Pilha (Stack)
-* Lista Encadeada (Linked List)
+## Objetivos do Projeto
 
-O objetivo é representar o funcionamento básico de transmissão de pacotes em redes de computadores usando conceitos de estruturas de dados.
+Simular o envio de pacotes em uma rede utilizando três estruturas específicas:
+* **Fila:** Armazenamento de pacotes que aguardam transmissão.
+* **Pilha:** Armazenamento de pacotes que apresentaram erro e aguardam retransmissão.
+* **Lista Encadeada:** Controle de pacotes ativos circulando na rede.
 
+---
 
-# Objetivo
+## Conceitos e Operações Implementadas
 
-Simular o envio de pacotes em uma rede utilizando:
+### Fila (FIFO - First In, First Out)
+A fila funciona no modelo em que o primeiro pacote a entrar é rigorosamente o primeiro a ser transmitido.
+* **Operações:** Adicionar pacote, transmitir pacote e mostrar fila.
 
-* **Fila** → pacotes aguardando transmissão
-* **Pilha** → pacotes com erro aguardando retransmissão
-* **Lista Encadeada** → pacotes ativos circulando na rede
+### Pilha (LIFO - Last In, First Out)
+A pilha funciona no modelo em que o Visualizador do último pacote a apresentar falha será o primeiro a ser retransmitido.
+* **Operações:** Registrar erro, retransmitir pacote e mostrar pilha.
 
+### Lista Encadeada
+Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. Cada pacote armazena as seguintes informações: ID, Origem, Destino e Status.
+* **Operações:** Inserir pacote, buscar pacote, remover pacote entregue e listar pacotes.
 
-# Conceitos
+---
 
-## Fila (FIFO)
+## Dados dos Pacotes Utilizados
 
-A fila funciona no modelo:
+| Pacote | Tamanho |
+| :--- | :--- |
+| Pacote 1 | 500 KB |
+| Pacote 2 | 300 KB |
+| Pacote 3 | 700 KB |
+| Pacote 4 | 200 KB |
 
-> First In, First Out
+---
 
-Ou seja, o primeiro pacote que entra é o primeiro a ser transmitido.
+## Resultados da Simulação
 
-### Operações implementadas
+### Parte 1 — Fila
 
-* Adicionar pacote
-* Transmitir pacote
-* Mostrar fila
+<img width="639" height="539" alt="Simulação Fila" src="https://github.com/user-attachments/assets/e8646a9b-8d14-4344-9a21-1c81474f43ce" />
 
+* **Resultado:** Pacote 1.
+* **Justificativa:** Em uma estrutura de fila, o primeiro elemento inserido é o primeiro a ser atendido (princípio First In, First Out).
 
-## Pilha (LIFO)
+### Parte 2 — Pilha
 
-A pilha funciona no modelo:
+<img width="775" height="648" alt="Simulação Pilha" src="https://github.com/user-attachments/assets/ef34e86d-e1b6-4605-9f2f-baf06ff4874e" />
 
-> Last In, First Out
+* **Resultado:** Pacote 4.
+* **Justificativa:** O Pacote 4 ocupa o topo da estrutura. A pilha remove sempre o último elemento inserido (princípio Last In, First Out).
 
-O último pacote que falhou será o primeiro retransmitido.
+### Parte 3 — Lista Encadeada
 
-### Operações implementadas
+<img width="886" height="797" alt="Simulação Lista Encadeada" src="https://github.com/user-attachments/assets/151a26ad-2f37-4a37-b405-96bf30377241" />
 
-* Registrar erro
-* Retransmitir pacote
-* Mostrar pilha
+* Gerenciamento e fluxo dinâmico dos pacotes ativos conforme as regras de inserção e remoção.
 
+---
 
-## Lista Encadeada
+## Respostas às Perguntas Teóricas
 
-Estrutura utilizada para controlar os pacotes ativos na rede.
+1. **Ordem de Processamento:** Os pacotes precisam ser enviados na mesma ordem em que chegam à rede para garantir a organização sequencial e cronológica no processamento de dados.
+2. **Tratamento de Erros:** O pacote mais recente com erro normalmente é tratado primeiro, o que torna a estrutura de pilha ideal para cenários de retransmissões rápidas.
+3. **Vantagem da Lista Encadeada:** Esta estrutura permite inserções e remoções dinâmicas de pacotes a qualquer momento, sem a necessidade de reorganizar ou deslocar os demais elementos na memória.
+4. **Análise de Gargalo (Fila):** A fila é a estrutura associada ao gargalo, pois os pacotes aguardam atendimento estritamente conforme a ordem de chegada, o que pode gerar tempo de espera e latência adaptativa.
 
-### Informações armazenadas
+---
 
-Cada pacote contém:
-
-* ID
-* Origem
-* Destino
-* Status
-
-### Operações implementadas
-
-* Inserir pacote
-* Buscar pacote
-* Remover pacote entregue
-* Listar pacotes
-
-
-# Pacotes Utilizados
-
-| Pacote   | Tamanho |
-| -------- | ------- |
-| Pacote 1 | 500 KB  |
-| Pacote 2 | 300 KB  |
-| Pacote 3 | 700 KB  |
-| Pacote 4 | 200 KB  |
-
-
-# Simulação Realizada
-
-## Parte 1 — Fila
-
-<img width="639" height="539" alt="image" src="https://github.com/user-attachments/assets/e8646a9b-8d14-4344-9a21-1c81474f43ce" />
-
-### Resposta: Pacote 1 , Porque em uma fila o primeiro será o primeiro a ser atendido ( first in , first out )
-
-## Parte 2 — Pilha
-
-<img width="775" height="648" alt="image" src="https://github.com/user-attachments/assets/ef34e86d-e1b6-4605-9f2f-baf06ff4874e" />
-
-### Resposta: Pacote 4 que é o topo ou (o ultimo será o primeiro, Last in , First out) porque a pilha remove o último elemento inserido.
-
-
-## Parte 3 — Lista Encadeada
-
-<img width="886" height="797" alt="image" src="https://github.com/user-attachments/assets/151a26ad-2f37-4a37-b405-96bf30377241" />
-
-# Perguntas Teóricas
-
-## 1.	 Porque os pacotes precisam ser enviados na mesma ordem em que chegam à rede, garantindo organização no processamento.
-
-## 2.	Porque normalmente o pacote mais recente com erro é tratado primeiro, tornando a pilha adequada para retransmissões rápidas.
-
-## 3.	Porque permite inserções e remoções dinâmicas de pacotes sem necessidade de reorganizar toda a estrutura.
-
-## 4.	A fila, pois os pacotes aguardam atendimento conforme a ordem de chegada, podendo gerar tempo de espera.
-
-
-# Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * Linguagem C
 * Estruturas de Dados
-* VsCode
-* GBD Online
+* VS Code
+* GDB Online
 * GitHub
-* Google/Youtube e outras ferramentas de pesquisa
+* Ferramentas de pesquisa (Google, YouTube e documentações)
 
 ---
 
-# Como Executar
+## Como Executar
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
 
-# Acesse a pasta
+# Acesse a pasta do projeto
 cd seu-repositorio
 
 # Execute o programa
-```
-
----
-
-# Autores
-Nayara Emelly e Ana Beatriz 
