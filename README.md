@@ -8,7 +8,6 @@ Projeto desenvolvido para simular uma rede simples de computadores utilizando es
 
 O objetivo é representar o funcionamento básico de transmissão de pacotes em redes de computadores usando conceitos de estruturas de dados.
 
----
 
 # Objetivo
 
@@ -18,7 +17,6 @@ Simular o envio de pacotes em uma rede utilizando:
 * **Pilha** → pacotes com erro aguardando retransmissão
 * **Lista Encadeada** → pacotes ativos circulando na rede
 
----
 
 # Conceitos
 
@@ -36,7 +34,6 @@ Ou seja, o primeiro pacote que entra é o primeiro a ser transmitido.
 * Transmitir pacote
 * Mostrar fila
 
----
 
 ## Pilha (LIFO)
 
@@ -52,7 +49,6 @@ O último pacote que falhou será o primeiro retransmitido.
 * Retransmitir pacote
 * Mostrar pilha
 
----
 
 ## Lista Encadeada
 
@@ -74,7 +70,6 @@ Cada pacote contém:
 * Remover pacote entregue
 * Listar pacotes
 
----
 
 # Pacotes Utilizados
 
@@ -85,7 +80,6 @@ Cada pacote contém:
 | Pacote 3 | 700 KB  |
 | Pacote 4 | 200 KB  |
 
----
 
 # Simulação Realizada
 
@@ -106,7 +100,6 @@ O primeiro pacote transmitido será:
 
 Pois a fila segue a ordem de chegada.
 
----
 
 ## Parte 2 — Pilha
 
