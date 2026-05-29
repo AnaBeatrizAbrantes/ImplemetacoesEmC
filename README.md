@@ -85,71 +85,30 @@ Cada pacote contém:
 
 ## Parte 1 — Fila
 
-Pacotes recebidos:
+<img width="639" height="539" alt="image" src="https://github.com/user-attachments/assets/e8646a9b-8d14-4344-9a21-1c81474f43ce" />
 
-1. Pacote 1
-2. Pacote 2
-3. Pacote 3
-4. Pacote 4
-
-### Resultado
-
-O primeiro pacote transmitido será:
-
-**Pacote 1**
-
-Pois a fila segue a ordem de chegada.
-
+### Resposta: Pacote 1 , Porque em uma fila o primeiro será o primeiro a ser atendido ( first in , first out )
 
 ## Parte 2 — Pilha
 
-Pacotes com erro:
+<img width="775" height="648" alt="image" src="https://github.com/user-attachments/assets/ef34e86d-e1b6-4605-9f2f-baf06ff4874e" />
 
-* Pacote 2
-* Pacote 4
+### Resposta: Pacote 4 que é o topo ou (o ultimo será o primeiro, Last in , First out) porque a pilha remove o último elemento inserido.
 
-### Resultado
-
-O primeiro pacote retransmitido será:
-
-**Pacote 4**
-
-Pois a pilha remove o último elemento inserido.
-
----
 
 ## Parte 3 — Lista Encadeada
 
-Fluxo da simulação:
-
-1. Chegada de 4 pacotes
-2. Transmissão de 2 pacotes
-3. Um pacote apresenta erro
-4. Um pacote é entregue
-5. Remoção do pacote entregue da lista
-
----
+<img width="886" height="797" alt="image" src="https://github.com/user-attachments/assets/151a26ad-2f37-4a37-b405-96bf30377241" />
 
 # Perguntas Teóricas
 
-## 1. Por que a fila representa bem a transmissão de pacotes?
+## 1.	 Porque os pacotes precisam ser enviados na mesma ordem em que chegam à rede, garantindo organização no processamento.
 
-Porque os pacotes precisam ser enviados na mesma ordem em que chegam à rede, garantindo organização no processamento.
+## 2.	Porque normalmente o pacote mais recente com erro é tratado primeiro, tornando a pilha adequada para retransmissões rápidas.
 
+## 3.	Porque permite inserções e remoções dinâmicas de pacotes sem necessidade de reorganizar toda a estrutura.
 
-## 2. Por que a pilha pode representar retransmissão?
-
-Porque normalmente o pacote mais recente com erro é tratado primeiro, tornando a pilha adequada para retransmissões rápidas.
-
-
-## 3. Por que a lista encadeada ajuda no controle de pacotes ativos?
-
-Porque permite inserções e remoções dinâmicas de pacotes sem necessidade de reorganizar toda a estrutura.
-
-
-## 4. Qual estrutura melhor representa atraso de fila?
-
-A fila, pois os pacotes aguardam atendimento conforme a ordem de chegada, podendo gerar tempo de espera.
+## 4.	A fila, pois os pacotes aguardam atendimento conforme a ordem de chegada, podendo gerar tempo de espera.
 
 
 # Tecnologias Utilizadas
