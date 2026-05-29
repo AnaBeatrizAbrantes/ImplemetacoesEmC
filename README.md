@@ -27,32 +27,19 @@ Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. C
 
 ---
 
-## Dados dos Pacotes Utilizados
-
-| Pacote | Tamanho |
-| :--- | :--- |
-| Pacote 1 | 500 KB |
-| Pacote 2 | 300 KB |
-| Pacote 3 | 700 KB |
-| Pacote 4 | 200 KB |
-
----
-
-## Resultados da Simulação
+## Resultados
 
 ### Parte 1 — Fila
 
 <img width="639" height="539" alt="Simulação Fila" src="https://github.com/user-attachments/assets/e8646a9b-8d14-4344-9a21-1c81474f43ce" />
 
-* **Resultado:** Pacote 1.
-* **Justificativa:** Em uma estrutura de fila, o primeiro elemento inserido é o primeiro a ser atendido (princípio First In, First Out).
+* **Resposta:** Pacote 1. Em uma estrutura de fila, o primeiro elemento inserido é o primeiro a ser atendido (princípio First In, First Out).
 
 ### Parte 2 — Pilha
 
 <img width="775" height="648" alt="Simulação Pilha" src="https://github.com/user-attachments/assets/ef34e86d-e1b6-4605-9f2f-baf06ff4874e" />
 
-* **Resultado:** Pacote 4.
-* **Justificativa:** O Pacote 4 ocupa o topo da estrutura. A pilha remove sempre o último elemento inserido (princípio Last In, First Out).
+* **Resposta:** Pacote 4. O Pacote 4 ocupa o topo da estrutura. A pilha remove sempre o último elemento inserido (princípio Last In, First Out).
 
 ### Parte 3 — Lista Encadeada
 
