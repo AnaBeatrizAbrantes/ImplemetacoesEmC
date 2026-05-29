@@ -78,7 +78,7 @@ Estrutura utilizada para o gerenciamento dinâmico dos pacotes ativos na rede. C
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+git clone [https://github.com/AnaBeatrizAbrantes/ImplemetacoesEmC.git](https://github.com/AnaBeatrizAbrantes/ImplemetacoesEmC.git)
 
 # Acesse a pasta do projeto
 cd seu-repositorio
